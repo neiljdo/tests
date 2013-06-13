@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+    <head>
+        <title>CofeeScript Test</title>
+    </head>
+
+    <body>
+        <p id="drJekyll">Some p</p>
+        <a href="#">Trigger</a>
+
+        <script type="text/javascript" src="../utils/coffee-script.js"></script>
+        <script type="text/javascript" src="../utils/jquery-1.10.1.min.js"></script>
+        <script type="text/coffeescript" src="main.coffee"></script>
+
+        <script type="text/coffeescript">
+            $(document).ready ->
+                $('body').append '<h1>Header</h1>'
+
+                $('#drJekyll').click ->
+                    alert 'Now, I shall transform'
+                    $(this).attr 'id', 'mrHyde'
+                    $(this).unbind 'click'
+
+                destroyWorld = -> console.log 'World destroyed!'
+                $('a').click(destroyWorld).unbind('click')
+        </script>
+    </body>
+</html>
