@@ -1,0 +1,128 @@
+.flexbox-holder {
+    background-color: #ddd;
+    display: -moz-box;
+    display: -ms-box;
+    display: -webkit-box;
+    width: 600px;
+}
+
+.flexbox-holder div {
+    background-color: #fff;
+    border: 1px solid #000;
+    margin: 10px 5px;
+    padding: 10px;
+    width: 150px;
+}
+
+.flexbox-holder div:first-of-type {
+    margin-left: 10px;
+}
+
+.flexbox-holder div:last-of-type {
+    margin-right: 10px;
+}
+
+.flex {
+    -moz-box-flex: 1;
+    -ms-box-flex: 1;
+    -webkit-box-flex: 1;
+}
+
+
+.demo2 .flex-two {
+    -moz-box-flex: 5;
+    -ms-box-flex: 5;
+    -webkit-box-flex: 5;
+}
+
+
+.demo3 .flex-zero {
+    -moz-box-flex: 0;
+    -ms-box-flex: 0;
+    -webkit-box-flex: 0;
+}
+
+
+.demo4 [class^="box-holder"] {
+    background-color: #ddd;
+    display: -moz-box;
+    display: -ms-box;
+    display: -webkit-box;
+    width: 600px;
+}
+
+.demo4 [class^="flex-"] {
+    background-color: #fff;
+    border: 1px solid #000;
+    margin: 10px 5px;
+    padding: 10px;
+    width: 60px;
+
+    -moz-box-flex: 1;
+    -ms-box-flex: 1;
+    -webkit-box-flex: 1;
+}
+
+.demo4 .flex-one {
+    -moz-box-flex: 2;
+    -ms-box-flex: 2;
+    -webkit-box-flex: 2;
+}
+
+.demo4 .box-holder-one .flex-one,
+.demo4 .box-holder-one .flex-two {
+    -moz-box-flex-group: 2;
+    -webkit-box-flex-group: 2;
+}
+
+.demo4 .box-holder-one .flex-three {
+    -moz-box-flex-group: 3;
+    -webkit-box-flex-group: 3;
+}
+
+.demo4 .box-holder-two .flex-one,
+.demo4 .box-holder-two .flex-two {
+    -moz-box-flex-group: 3;
+    -webkit-box-flex-group: 3;
+}
+
+.demo4 .box-holder-two .flex-three {
+    -moz-box-flex-group: 2;
+    -webkit-box-flex-group: 2;
+}
+
+
+.demo5 [class^="box-holder"] {
+    background-color: #ddd;
+    display: -moz-box;
+    display: -ms-box;
+    display: -webkit-box;
+    margin: 10px;
+}
+
+.demo5 [class^="flex-"] {
+    background-color: #fff;
+    border: 1px solid #000;
+    margin: 10px 5px;
+    padding: 10px;
+
+    -moz-box-flex: 1;
+    -ms-box-flex: 1;
+    -webkit-box-flex: 1;
+}
+
+.demo5 .box-holder-one {
+    -moz-box-direction: reverse;
+    -ms-box-direction: reverse;
+    -webkit-box-direction: reverse;
+
+    -moz-box-orient: vertical;
+    -ms-box-orient: vertical;
+    -webkit-box-orient: vertical;
+}
+
+.demo5 .box-holder-two {
+    -moz-box-orient: horizontal;
+    -ms-box-orient: horizontal;
+    -webkit-box-orient: horizontal;
+}
