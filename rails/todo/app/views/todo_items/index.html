@@ -1,0 +1,20 @@
+<section class="todoapp">
+  <header class="header">
+    <h1>todo list</h1>
+    <%= form_for TodoItem.new, :method => :post, :remote => true do |f| %>
+      <%= f.text_field :title, class:'new-todo', placeholder: 'What needs to be done?', autofocus: true %>
+    <% end %>
+  </header>
+
+  <section class="main">
+    <ul class="todo-list">
+      <% @todo_items.each do |item| %>
+        <%= render partial: 'todo_item', locals: {item: item} %>
+      <% end %>
+    </ul>
+  </section>
+
+  <footer class="footer">
+    <button class="clear-completed">Clear completed</button>
+  </footer>
+</section>

@@ -1,0 +1,8 @@
+<li data-id="<%= item.id %>" class="<%= item.completed ? 'completed' : '' %>">
+  <diav class="view">
+    <label>
+      <input type="checkbox" <%= "checked" if item.completed %> class="toggle"> <%= item.title %>
+    </label>
+    <button class="destroy">&times;</button>
+  </div>
+</li>
