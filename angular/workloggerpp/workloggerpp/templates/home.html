@@ -1,0 +1,86 @@
+{% load staticfiles %}
+
+
+<!doctype html>
+
+<html data-ng-app="WorkLogger">
+    <head>
+        <title>WORKLOGGER</title>
+        <link href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" rel="stylesheet">
+        <style>
+            .error {
+                color: #f00;
+            }
+        </style>
+    </head>
+
+    <body data-ng-controller="WorkLoggerCtrl" data-ng-init="current_user=''; init();">
+        <h1>the WORKLOGGER</h1>
+        
+        <h4>Hello, {[ current_user.username ]} <a href="{% url 'logout' %}">(logout)</a></h4>
+        
+        <h1>Log your Time Below</h1>
+
+        <fieldset>
+            <legend>Go to date</legend>
+            <input data-ng-model="viewed_date" data-ng-change="viewDate()" id="id_date" name="date" type="date">
+        </fieldset>
+
+        <form name="create-log-entry" data-ng-submit="createLogEntry()" novalidate>
+            <fieldset>
+                <legend>Create a new log entry</legend>
+                <div class="ctrl-group">
+                    <label for="duration">Duration</label>
+                    <input name="duration" data-ng-model="duration" type="text" ng-pattern="/^\d+[.]?\d*$/" ng-required>
+                </div>
+
+                <div class="ctrl-group">
+                    <label for="project">Project</label>
+                    <select name="project" data-ng-model="project" ng-required>
+                        <option value="">-- choose project --</option>
+                        <option ng-repeat="p in projects" value="{[ p.resource_uri ]}">{[ p.name ]}</option>
+                    </select>
+                </div>
+
+                <div class="ctrl-group">
+                    <label for="date">Date</label>
+                    <input name="date" data-ng-model="date" type="date" ng-required>
+                </div>
+
+                <div class="ctrl-group">
+                    <label for="remarks">Remark</label>
+                    <textarea name="remarks" data-ng-model="remarks"></textarea>
+                </div>
+            </fieldset>
+
+            <input type="submit" value="Log">
+        </form>
+
+        <p>Total hours for {[ viewed_date | date:'yyyy/MM/dd' ]}: {[ daily_total | number:2 ]}h</p>
+        <p>Total hours for the week: {[ weekly_total | number:2 ]}h</p>
+        <p>Total hours for the month: {[ monthly_total | number:2 ]}h</p>
+
+        <table style="width: 100%;">
+            <thead>
+                <tr>
+                    <th>DURATION</th>
+                    <th>PROJECT</th>
+                    <th>REMARKS</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr data-ng-repeat="entry in entries">
+                    <td>{[ entry.duration ]}h</td>
+                    <td>{[ entry.projectName ]}</td>
+                    <td>{[ entry.remarks ]}</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+        <script src="{% static 'js/angular/angular.min.js' %}"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular-cookies.min.js"></script>
+        <script src="{% static 'js/compiled/app.js' %}"></script>
+    </body>
+</html>

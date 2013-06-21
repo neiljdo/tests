@@ -1,0 +1,25 @@
+{% load staticfiles %}
+
+
+<!doctype html>
+
+<html>
+    <head>
+        <title>WORKLOGGER | {% block title %}{% endblock title %}</title>
+        <link href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" rel="stylesheet">
+
+        <script src="{% static 'js/angular/angular.js' %}"></script>
+
+        {% block headjs %}{% endblock headjs %}
+    </head>
+    
+    <body>
+        <h1>the WORKLOGGER</h1>
+        
+        {% block content %}{% endblock content %}
+        
+        <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+        <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+        {% block bodyjs %}{% endblock bodyjs %}
+    </body>
+</html>
