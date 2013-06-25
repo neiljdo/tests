@@ -1,10 +1,5 @@
 WorkLogger = angular.module 'WorkLogger', ['ngCookies']
 
-WorkLogger.config ($interpolateProvider) ->
-  $interpolateProvider
-    .startSymbol('{[')
-    .endSymbol(']}')
-
 WorkLogger.controller 'WorkLoggerCtrl', ($scope, $cookies, $filter, $http) ->
   getProjectName = (entry) ->
     $http.get(entry.project).success (data, status, headers, config) ->
@@ -47,6 +42,3 @@ WorkLogger.controller 'WorkLoggerCtrl', ($scope, $cookies, $filter, $http) ->
         remarks: $scope.remarks
       }).success (data, status, headers, config) ->
         updatePage $scope.viewed_date
-
-
-

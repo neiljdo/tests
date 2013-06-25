@@ -3,10 +3,6 @@ var WorkLogger;
 
 WorkLogger = angular.module('WorkLogger', ['ngCookies']);
 
-WorkLogger.config(function($interpolateProvider) {
-  return $interpolateProvider.startSymbol('{[').endSymbol(']}');
-});
-
 WorkLogger.controller('WorkLoggerCtrl', function($scope, $cookies, $filter, $http) {
   var getProjectName, updatePage;
   getProjectName = function(entry) {
