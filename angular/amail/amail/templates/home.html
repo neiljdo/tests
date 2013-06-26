@@ -1,0 +1,22 @@
+{% load staticfiles %}
+
+<!doctype html>
+<html data-ng-app="AMail">
+  <head>
+    <title>A-Mail</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>A-Mail</h1>
+    </header>
+
+    <div data-ng-view></div>
+
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="{% static 'js/angular/angular.js' %}"></script>
+    <script src="{% static 'js/compiled/modules.js' %}"></script>
+    <script src="{% static 'js/compiled/controllers.js' %}"></script>
+    <script src="{% static 'js/compiled/directives.js' %}"></script>
+  </body>
+</html>
