@@ -11,3 +11,8 @@
 # directories
 node_modules/
 
+# sass/compass
+.sass-cache
+
+# compressed files
+*.zip
