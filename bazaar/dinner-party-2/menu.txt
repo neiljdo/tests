@@ -1,0 +1,18 @@
+Menu
+====
+- Guacamole
+- Corn chips
+- Spicy tomato sauce
+- Minestrone soup
+- Buffalo wings
+- Chicken fingers
+- Outrageous chimichanga
+- Corona beer
+- Chicken fajitas
+- Beef fajitas
+- Mixed fajitas
+- Chicken burrito
+- Beef burrito
+- Mixed burrito
+- Onion soup
+- Tacos

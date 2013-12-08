@@ -1,0 +1,32 @@
+Invoice
+------------------------------------------------------------
+
+                       El Torito Ltd.
+                     ABN 55 555 555 555
+                 Telephone (81) 5555 555
+               P.O. Box 305-0005, Azuma 3-15-8
+
+                      TAX INVOICE 00001 
+------------------------------------------------------------
+To:
+Bazaar Dinner
+P.O. Box 555
+HILLSIDE  SA  5050
+
+Date:               14/02/2013 (Thursday)
+Order Number:       E1234
+A.B.N.:             55 555 55
+Payment Terms:      14 days
+Payment Due:        15/02/2013 (Friday)
+
+------------------------------------------------------------
+
+CHICKEN FINGERS
+  10 @ $4.29                                          $42.90*
+
+OUTRAGEOUS CHIMICHANGA
+  8 @ $8.94                                           $71.52*
+
+------------------------------------------------------------
+TOTAL AMOUNT:                                        $114.42
+
