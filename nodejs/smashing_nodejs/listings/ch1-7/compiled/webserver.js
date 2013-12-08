@@ -10,7 +10,10 @@
     res.writeHead(200, {
       'Content-Type': 'text/html'
     });
-    res.end('<h1>Hello world!</h1>');
+    res.write('Hello ');
+    setTimeout(function() {
+      res.end('<b>world!</b>');
+    }, 3000);
   }).listen(3000);
 
 }).call(this);
