@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+
+  <body>
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://documentcloud.github.com/underscore/underscore-min.js"></script>
+    <script src="http://documentcloud.github.com/backbone/backbone-min.js"></script>
+    <script src="models/todo.js"></script>
+    <script src="models/person.js"></script>
+    <script src="views/todo.js"></script>
+    <script>
+      $(function() {
+        var todo1 = new Todo();
+        console.log(JSON.stringify(todo1));
+        console.log(todo1.toJSON());
+
+        var todo2 = new Todo({
+          title: 'Check the attributes of both model instances in the console.',
+          completed: true
+        });
+        console.log(JSON.stringify(todo2));
+        console.log(todo2.get('title'));
+        console.log(todo2.get('completed'));
+
+        var todo3 = new Todo();
+        todo3.set({
+          title: 'todo3 title',
+          completed: true,
+          newField: 'arbitrary field'
+        });
+        console.log(JSON.stringify(todo3));
+        todo3.set('title', 'new title');
+        console.log(JSON.stringify(todo3));
+
+        var person = new Person();
+        person.save();
+
+        person.set({
+          firstName: 'Neil',
+          lastName: null
+        }, {validate: true});
+
+        console.log(person.toJSON());
+
+        person.set({
+          firstName: 'Neil',
+          lastName: 'Ortega'
+        }, {validate: true});
+        console.log(person.toJSON());
+
+        var todo4 = new Todo();
+        todo4.set('completed', true, {validate: true});
+        console.log(todo4.toJSON());
+
+        var todoView = new TodoView();
+        console.log(todoView.el);
+      });
+    </script>
+
+    <script>
+      $(function() {
+        var button1 = $('<button class="button1"></button>'),
+            button2 = $('<button class="button2"></button>');
+
+        var ButtonView = Backbone.View.extend({
+          events: {
+            click: function (e) {
+              console.log(view.el);
+              console.log(view.el === e.target);
+            }
+          }
+        });
+
+        var view = new ButtonView({el: button1});
+        view.setElement(button2);
+
+        button1.click();
+        button2.click();
+      });
+    </script>
+  </body>
+</html>
