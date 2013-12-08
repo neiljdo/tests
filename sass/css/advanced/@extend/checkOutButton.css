@@ -1,0 +1,14 @@
+.blue-button, .checkout-button {
+  background: #336699;
+  font-weight: bold;
+  color: white;
+  padding: 5px; }
+
+.red-button, .exit-button {
+  background: #fa3669;
+  font-weight: bold;
+  color: white;
+  padding: 5px; }
+
+.exit-button {
+  background: #660000; }

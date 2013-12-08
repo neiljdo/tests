@@ -1,0 +1,12 @@
+@import "blueButton";
+@import "redButton";
+
+
+.checkout-button {
+  @extend .blue-button;
+}
+
+.exit-button {
+  @extend .red-button;
+  background: darken(red, 30%);
+}

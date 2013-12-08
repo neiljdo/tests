@@ -1,0 +1,17 @@
+.car.car-volvo {
+  color: "green";
+  width: 100%; }
+  .car.car-volvo .image {
+    background: url("images/volvo/green.png"); }
+
+.car.car-corvette {
+  color: "#369";
+  width: 100%; }
+  .car.car-corvette .image {
+    background: url("images/corvette/#369.png"); }
+
+.car.car-bmw {
+  color: 5;
+  width: 100%; }
+  .car.car-bmw .image {
+    background: url("images/bmw/5.png"); }

@@ -1,0 +1,46 @@
+$mainColor: #369;
+
+#page {
+  color: lighten($mainColor, 20%);
+}
+
+#page {
+  color: darken($mainColor, 20%);
+}
+
+#page {
+  color: saturate($mainColor, 30%);
+}
+
+#page {
+  color: desaturate($mainColor, 30%);
+}
+
+#page {
+  color: adjust-hue($mainColor, 180);
+}
+
+#page {
+  color: adjust-hue(red, 180) + red;
+}
+
+#page {
+  color: adjust-hue(red, 360);
+}
+
+#page {
+  color: $mainColor + #993266;
+}
+
+#page {
+  color: mix($mainColor, #993266);
+}
+
+/* mix is not the same as +! */
+#page {
+  color: mix(cyan, red);
+}
+
+#page {
+  color: cyan + red;
+}

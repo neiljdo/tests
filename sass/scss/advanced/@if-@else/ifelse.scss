@@ -1,0 +1,19 @@
+@mixin countryColor($country) {
+  @if $country == france {
+    color: blue;
+  } @else if $country == spain {
+    color: yellow;
+  } @else if $country == italy {
+    color: green;
+  } @else {
+    // default case
+    color: red;
+  }
+}
+
+
+@each $country in england, usa, germany, spain {
+  .#{$country} {
+    @include countryColor($country);
+  }
+}

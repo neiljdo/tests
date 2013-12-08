@@ -1,0 +1,33 @@
+@mixin blueText {
+  color: #369;
+  font-family: helvetica, arial, sans-serif;
+  font-size: 20px;
+  font-variant: small-caps;
+}
+
+
+@mixin redText($size) {
+  color: red;
+  font-family: helvetica, arial, sans-serif;
+  font-size: $size;
+  font-variant: small-caps;
+}
+
+
+@mixin greenText($size: 15px) {
+  color: green;
+  font-family: helvetica, arial, sans-serif;
+  font-size: $size;
+  font-variant: small-caps;
+}
+
+
+@mixin opacity($opacity) {
+  filter: alpha(opacity=$opacity * 100);
+  opacity: $opacity;
+}
+
+@mixin opacity2($opacity) {
+  filter: alpha(opacity=#{$opacity * 100});
+  opacity: $opacity;
+}

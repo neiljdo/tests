@@ -1,0 +1,5 @@
+@each $member in neil, paul, joseph {
+  .#{$member}-photo {
+    background-image: url("/image/#{$member}.jpg");
+  }
+}

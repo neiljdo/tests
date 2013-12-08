@@ -1,0 +1,98 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/reset/utilities";
+@import "compass/typography/lists/bullets";
+@import "compass/typography/lists/horizontal-list";
+@import "compass/layout/sticky-footer";
+@import "compass/utilities/general/clearfix";
+@import "compass/typography/text/ellipsis";
+@import "compass/layout/stretching";
+@import "compass/utilities";
+@import "compass/css3";
+@import "icons/*.png";
+
+
+body {
+  .sidebar {
+    @include nested-reset;
+  }
+}
+
+// .flowerbullet {
+//   @include pretty-bullets("star.png");
+// }
+
+.no-bullet-test {
+  @include no-bullet;
+}
+
+.no-bullets-test {
+  @include no-bullets;
+}
+
+.horiz {
+  @include horizontal-list;
+}
+
+@include sticky-footer(50px, '#custom_root', '#custom_root_footer', '#custom_footer');
+
+.class {
+  @include clearfix;
+}
+
+.with-ellipsis {
+  @include ellipsis;
+}
+
+.stretch-box {
+  border: 2px solid black;
+  width: 240px;
+  height: 240px;
+  position: relative;
+  @include inline-block;
+}
+
+.stretch-fully {
+  @include stretch;
+}
+
+.stretch-fully-with-gaps {
+  @include stretch(12px, 10px, 14px, 15px);
+}
+
+.stretch-hor {
+  @include stretch-x(5px, 10px);
+}
+
+.stretch-vert {
+  @include stretch-y(3px, 2px);
+}
+
+#two-columns {
+  @include column-count(2);
+  width: 300px;
+}
+
+#columns-with-width-and-gap {
+  @include column-width(240px);
+  @include column-gap(24px);
+}
+
+#column-with-borders {
+  @include column-count(2);
+  @include column-rule(2px, solid, red);
+  @include column-width(50px);
+  @include column-gap(10px);
+  width: 300px;
+}
+
+@include all-icons-sprites;
+
+.yrbk {
+  .add-icon { @include icons-sprites(add_icon); }
+  .add-yrbk { @include icons-sprites(add_yearbook); }
+}

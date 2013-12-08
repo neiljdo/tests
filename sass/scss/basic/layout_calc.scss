@@ -1,0 +1,12 @@
+$width: 400px;
+$double: $width * 2;
+$add: $width + 2;
+$subtract: $width - 2;
+$divide: $width / 2;
+
+body {
+  width: $width;
+  height: $double;
+  min-width: $add + $subtract;
+  min-height: $divide;
+}

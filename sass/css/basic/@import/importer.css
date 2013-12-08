@@ -1,0 +1,6 @@
+body {
+  color: white;
+  width: 100px; }
+  body #container {
+    color: red;
+    width: 70px; }

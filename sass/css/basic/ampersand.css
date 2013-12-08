@@ -1,0 +1,6 @@
+.infobox#some-id + p {
+  color: blue; }
+  .user .infobox#some-id + p {
+    color: gray; }
+  .infobox#some-id + p .user {
+    color: yellow; }

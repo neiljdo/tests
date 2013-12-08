@@ -1,0 +1,433 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+.icons-sprite, .icons-add_icon, .icons-add_yearbook, .icons-bottomlayer, .icons-build_icon, .icons-center_align, .icons-center_align_clicked, .icons-coming_soon, .icons-dark_cover, .icons-dark_dashboard_preview, .icons-dark_preview, .icons-dark_section_icon, .icons-edit_icon, .icons-edit_static_text, .icons-favicon, .icons-glyphicons-halflings-white, .icons-glyphicons-halflings, .icons-innerfront_bg, .icons-layerdown, .icons-layerup, .icons-left_align, .icons-left_align_clicked, .icons-light_cover, .icons-light_dashboard_preview, .icons-light_preview, .icons-light_section_icon, .icons-logo, .icons-placeholder_image, .icons-placeholder_text, .icons-proceed_check, .icons-published, .icons-right_align, .icons-right_align_clicked, .icons-right_arrow, .icons-selected, .icons-share_icon, .icons-static_image, .icons-static_text, .icons-toplayer, .icons-yrbk, .icons-yrbk_navbar, .yrbk .add-icon .icons-add_icon, .yrbk .add-yrbk .icons-add_yearbook {
+  background: url('/images/icons-se2f930bcd9.png') no-repeat;
+}
+
+body .sidebar div, body .sidebar span, body .sidebar applet, body .sidebar object, body .sidebar iframe,
+body .sidebar h1, body .sidebar h2, body .sidebar h3, body .sidebar h4, body .sidebar h5, body .sidebar h6, body .sidebar p, body .sidebar blockquote, body .sidebar pre,
+body .sidebar a, body .sidebar abbr, body .sidebar acronym, body .sidebar address, body .sidebar big, body .sidebar cite, body .sidebar code,
+body .sidebar del, body .sidebar dfn, body .sidebar em, body .sidebar img, body .sidebar ins, body .sidebar kbd, body .sidebar q, body .sidebar s, body .sidebar samp,
+body .sidebar small, body .sidebar strike, body .sidebar strong, body .sidebar sub, body .sidebar sup, body .sidebar tt, body .sidebar var,
+body .sidebar b, body .sidebar u, body .sidebar i, body .sidebar center,
+body .sidebar dl, body .sidebar dt, body .sidebar dd, body .sidebar ol, body .sidebar ul, body .sidebar li,
+body .sidebar fieldset, body .sidebar form, body .sidebar label, body .sidebar legend,
+body .sidebar table, body .sidebar caption, body .sidebar tbody, body .sidebar tfoot, body .sidebar thead, body .sidebar tr, body .sidebar th, body .sidebar td,
+body .sidebar article, body .sidebar aside, body .sidebar canvas, body .sidebar details, body .sidebar embed,
+body .sidebar figure, body .sidebar figcaption, body .sidebar footer, body .sidebar header, body .sidebar hgroup,
+body .sidebar menu, body .sidebar nav, body .sidebar output, body .sidebar ruby, body .sidebar section, body .sidebar summary,
+body .sidebar time, body .sidebar mark, body .sidebar audio, body .sidebar video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+body .sidebar table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body .sidebar caption, body .sidebar th, body .sidebar td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+body .sidebar q, body .sidebar blockquote {
+  quotes: none;
+}
+body .sidebar q:before, body .sidebar q:after, body .sidebar blockquote:before, body .sidebar blockquote:after {
+  content: "";
+  content: none;
+}
+body .sidebar a img {
+  border: none;
+}
+
+.no-bullet-test {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+}
+
+.no-bullets-test {
+  list-style: none;
+}
+.no-bullets-test li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+}
+
+.horiz {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1;
+}
+.horiz li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  white-space: nowrap;
+  display: inline;
+  float: left;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+.horiz li:first-child, .horiz li.first {
+  padding-left: 0;
+}
+.horiz li:last-child {
+  padding-right: 0;
+}
+.horiz li.last {
+  padding-right: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+#custom_root {
+  clear: both;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: -50px;
+}
+#custom_root #custom_root_footer {
+  height: 50px;
+}
+
+#custom_footer {
+  clear: both;
+  position: relative;
+  height: 50px;
+}
+
+.class {
+  overflow: hidden;
+  *zoom: 1;
+}
+
+.with-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+
+.stretch-box {
+  border: 2px solid black;
+  width: 240px;
+  height: 240px;
+  position: relative;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+}
+
+.stretch-fully {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.stretch-fully-with-gaps {
+  position: absolute;
+  top: 12px;
+  bottom: 14px;
+  left: 15px;
+  right: 10px;
+}
+
+.stretch-hor {
+  position: absolute;
+  left: 5px;
+  right: 10px;
+}
+
+.stretch-vert {
+  position: absolute;
+  top: 3px;
+  bottom: 2px;
+}
+
+#two-columns {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  -ms-column-count: 2;
+  -o-column-count: 2;
+  column-count: 2;
+  width: 300px;
+}
+
+#columns-with-width-and-gap {
+  -webkit-column-width: 240px;
+  -moz-column-width: 240px;
+  -ms-column-width: 240px;
+  -o-column-width: 240px;
+  column-width: 240px;
+  -webkit-column-gap: 24px;
+  -moz-column-gap: 24px;
+  -ms-column-gap: 24px;
+  -o-column-gap: 24px;
+  column-gap: 24px;
+}
+
+#column-with-borders {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  -ms-column-count: 2;
+  -o-column-count: 2;
+  column-count: 2;
+  -webkit-column-rule: 2px solid red;
+  -moz-column-rule: 2px solid red;
+  -ms-column-rule: 2px solid red;
+  -o-column-rule: 2px solid red;
+  column-rule: 2px solid red;
+  -webkit-column-width: 50px;
+  -moz-column-width: 50px;
+  -ms-column-width: 50px;
+  -o-column-width: 50px;
+  column-width: 50px;
+  -webkit-column-gap: 10px;
+  -moz-column-gap: 10px;
+  -ms-column-gap: 10px;
+  -o-column-gap: 10px;
+  column-gap: 10px;
+  width: 300px;
+}
+
+.icons-add_icon {
+  background-position: 0 -5021px;
+}
+
+.icons-add_yearbook {
+  background-position: 0 -5042px;
+}
+
+.icons-bottomlayer {
+  background-position: 0 -4442px;
+}
+
+.icons-build_icon {
+  background-position: 0 -4707px;
+}
+
+.icons-center_align {
+  background-position: 0 -4849px;
+}
+
+.icons-center_align_clicked {
+  background-position: 0 -4816px;
+}
+
+.icons-coming_soon {
+  background-position: 0 -3714px;
+}
+
+.icons-dark_cover {
+  background-position: 0 0;
+}
+
+.icons-dark_dashboard_preview {
+  background-position: 0 -4100px;
+}
+
+.icons-dark_preview {
+  background-position: 0 -2742px;
+}
+
+.icons-dark_section_icon {
+  background-position: 0 -2685px;
+}
+
+.icons-edit_icon {
+  background-position: 0 -4749px;
+}
+
+.icons-edit_static_text {
+  background-position: 0 -4555px;
+}
+
+.icons-favicon {
+  background-position: 0 -4575px;
+}
+
+.icons-glyphicons-halflings-white {
+  background-position: 0 -3444px;
+}
+
+.icons-glyphicons-halflings {
+  background-position: 0 -2526px;
+}
+
+.icons-innerfront_bg {
+  background-position: 0 -1684px;
+}
+
+.icons-layerdown {
+  background-position: 0 -4607px;
+}
+
+.icons-layerup {
+  background-position: 0 -4632px;
+}
+
+.icons-left_align {
+  background-position: 0 -4988px;
+}
+
+.icons-left_align_clicked {
+  background-position: 0 -4761px;
+}
+
+.icons-light_cover {
+  background-position: 0 -842px;
+}
+
+.icons-light_dashboard_preview {
+  background-position: 0 -4213px;
+}
+
+.icons-light_preview {
+  background-position: 0 -3093px;
+}
+
+.icons-light_section_icon {
+  background-position: 0 -4498px;
+}
+
+.icons-logo {
+  background-position: 0 -4069px;
+}
+
+.icons-placeholder_image {
+  background-position: 0 -4687px;
+}
+
+.icons-placeholder_text {
+  background-position: 0 -4882px;
+}
+
+.icons-proceed_check {
+  background-position: 0 -4794px;
+}
+
+.icons-published {
+  background-position: 0 -4657px;
+}
+
+.icons-right_align {
+  background-position: 0 -4955px;
+}
+
+.icons-right_align_clicked {
+  background-position: 0 -4902px;
+}
+
+.icons-right_arrow {
+  background-position: 0 -5053px;
+}
+
+.icons-selected {
+  background-position: 0 -4326px;
+}
+
+.icons-share_icon {
+  background-position: 0 -4673px;
+}
+
+.icons-static_image {
+  background-position: 0 -4729px;
+}
+
+.icons-static_text {
+  background-position: 0 -4935px;
+}
+
+.icons-toplayer {
+  background-position: 0 -4417px;
+}
+
+.icons-yrbk {
+  background-position: 0 -3603px;
+}
+
+.icons-yrbk_navbar {
+  background-position: 0 -4467px;
+}
+
+.yrbk .add-icon .icons-add_icon {
+  background-position: 0 -5021px;
+}
+.yrbk .add-yrbk .icons-add_yearbook {
+  background-position: 0 -5042px;
+}

@@ -1,0 +1,12 @@
+@import "colors";
+@import "widths";
+
+body {
+  color: $mainColor;
+  width: $mainWidth;
+
+  #container {
+    color: $secondaryColor;
+    width: $secondaryWidth;
+  }
+}

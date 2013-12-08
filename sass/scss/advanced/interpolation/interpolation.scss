@@ -1,0 +1,15 @@
+@mixin carMixin($carBrand, $carColor) {
+  .car.car-#{$carBrand} {
+    color: $carColor;
+    width: 100%;
+
+    .image {
+      background: url("images/#{$carBrand}/#{$carColor}.png");
+    }
+  }
+}
+
+
+@include carMixin("volvo", "green");
+@include carMixin("corvette", "#369");
+@include carMixin("bmw", 5);

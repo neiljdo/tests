@@ -1,0 +1,24 @@
+@import "mixins";
+
+
+.product-title {
+  @include blueText;
+}
+
+.main-text {
+  @include redText(30px);
+}
+
+.derp {
+  color: blue;
+  @include greenText;
+  font-size: 50px
+}
+
+.opacity-test {
+  @include opacity(0.5);
+}
+
+.opacity2-test {
+  @include opacity2(0.7);
+}

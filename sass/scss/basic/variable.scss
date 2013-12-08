@@ -1,0 +1,17 @@
+$primaryColor: #639;
+$secondaryColor: #eee;
+$width: 800px;
+
+body {
+  background-color: $primaryColor;
+
+  #wrapper {
+    background-color: #fff;
+    width: $width;
+    border: $secondaryColor;
+
+    h1 {
+      color: $primaryColor;
+    }
+  }
+}

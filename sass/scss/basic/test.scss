@@ -1,0 +1,9 @@
+.red {
+  color: red;
+}
+
+.empty {
+  .child {
+    color: black;
+  }
+}

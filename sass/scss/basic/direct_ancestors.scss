@@ -1,0 +1,17 @@
+.infobox > {
+  .message {
+    border: 1px solid red;
+
+    > .title {
+      color: red;
+    }
+  }
+
+  .user {
+    border: 2px solid blue;
+
+    > .title {
+      color: blue;
+    }
+  }
+}

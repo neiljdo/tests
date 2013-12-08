@@ -1,0 +1,11 @@
+.infobox#some-id + p {
+  color: blue;
+
+  .user & {
+    color: gray;
+  }
+
+  & .user {
+    color: yellow;
+  }
+}
