@@ -1,0 +1,10 @@
+{
+  "name": "app-experimental",
+  "version": "0.0.0",
+  "description": "Experimental brunch skeleton",
+  "author": "Neil John D. Ortega <neiljohn.ortega@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+}
