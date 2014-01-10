@@ -10,6 +10,7 @@
 
 # directories
 node_modules/
+compiled/
 
 # sass/compass
 .sass-cache
