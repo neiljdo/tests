@@ -1,6 +1,7 @@
 # Django settings for satchmo project.
 # This is a recommended base setting for further customization, default for clonesatchmo.py
 import os
+from django.conf import global_settings
 
 DIRNAME = os.path.dirname(os.path.normpath(os.path.abspath(__file__)))
 
@@ -32,19 +33,20 @@ SITE_ID = 1
 #
 # from satchmo_utils.thumbnail import normalize_path
 # MEDIA_ROOT = normalize_path(os.path.join(DIRNAME, 'static/'))
-MEDIA_ROOT = os.path.join(DIRNAME, 'static/')
+MEDIA_ROOT = os.path.join(DIRNAME, 'media/')
 
 # URL that handles the media served from MEDIA_ROOT.
 # Example: "http://media.lawrence.com"
-MEDIA_URL="/media/"
+MEDIA_URL = '/media/'
 
 # STATIC_ROOT can be whatever different from other dirs
 STATIC_ROOT = os.path.join(DIRNAME, 'static-collect/')
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
-        os.path.join(DIRNAME, 'static/'),
+    os.path.join(DIRNAME, 'static/'),
 )
+STATICFILES_FINDERS = global_settings.STATICFILES_FINDERS + ('django.contrib.staticfiles.finders.DefaultStorageFinder',)
 
 # URL prefix for admin media -- CSS, JavaScript and images. Make sure to use a
 # trailing slash.

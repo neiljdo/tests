@@ -11,6 +11,8 @@
 # directories
 node_modules/
 compiled/
+cache/
+media/
 
 # sass/compass
 .sass-cache
