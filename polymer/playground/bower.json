@@ -1,0 +1,17 @@
+{
+  "name": "playground",
+  "version": "0.0.0",
+  "authors": [
+    "Neil John D. Ortega <neiljohn.ortega@gmail.com>"
+  ],
+  "description": "Polymer playground",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
