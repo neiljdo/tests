@@ -1,0 +1,3 @@
+[submodule "x-tag-core"]
+	path = x-tag-core
+	url = https://github.com/x-tag/core
